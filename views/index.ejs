@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>LMY Test</title>
+
+    <!-- bower:css -->
+    <link rel='stylesheet' href='assets/vendors/bootstrap/dist/css/bootstrap.css' />
+    <!-- endbower -->
+
+    <link rel='stylesheet' href='assets/stylesheets/style.css'/>
+    <link rel='stylesheet' href='assets/stylesheets/animation.css'/>
+
+
+</head>
+<body data-ng-controller="SaveSession" >
+
+
+        <div class="row grid-divider" >
+        <div class="col-md-5" ng-cloak>
+          <div class="col-padding">
+                <search-box ng-cloak></search-box>
+          </div>
+        </div>
+        <div class="col-md-3" ng-cloak>
+          <div class="col-padding">
+            <track-player ng-cloak></track-player>
+          </div>
+        </div>
+        <div class="col-md-3" ng-cloak>
+          <div class="col-padding">
+                <user-search-history ng-cloak></user-search-history>
+          </div>
+        </div>
+        </div>
+
+
+
+
+<!-- bower:js -->
+<script src="assets/vendors/angular/angular.js"></script>
+<script src="assets/vendors/jquery/dist/jquery.js"></script>
+<script src="assets/vendors/ngFitText/dist/ng-FitText.min.js"></script>
+<script src="assets/vendors/angular-animate/angular-animate.js"></script>
+<!-- endbower -->
+
+<!-- soundcloud  -->
+<script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+<script src="http://w.soundcloud.com/player/api.js"></script>
+<!-- end of soundcloud  -->
+
+<!-- inject:js -->
+<script src="app/app.js"></script>
+<script src="app/components/components.modules.js"></script>
+<script src="app/config/config.modules.js"></script>
+<script src="app/layout/layout.modules.js"></script>
+<script src="app/services/services.modules.js"></script>
+<script src="app/config/app.run.js"></script>
+<script src="app/config/app.saveSession.js"></script>
+<script src="app/config/app.session.js"></script>
+<script src="app/services/event-emitter.service.js"></script>
+<script src="app/services/on-before-unload.service.js"></script>
+<script src="app/services/search-history.service.js"></script>
+<script src="app/services/sound-cloud-search.service.js"></script>
+<script src="app/services/user-preferences.service.js"></script>
+<script src="app/components/fade-in-fade-out/fade-in-fade-out.component.js"></script>
+<script src="app/components/search-results/search-result.component.js"></script>
+<script src="app/components/search-results/search-result.controller.js"></script>
+<script src="app/layout/search-box/search-box.controller.js"></script>
+<script src="app/layout/search-box/search-box.layout.js"></script>
+<script src="app/layout/track-player/track-player.controller.js"></script>
+<script src="app/layout/track-player/track-player.layout.js"></script>
+<script src="app/layout/user-search-history/user-search-history.controller.js"></script>
+<script src="app/layout/user-search-history/user-search-history.layout.js"></script>
+<!-- endinject -->
+
+
+
+
+</body>
+
+
+
+
+
+</html>

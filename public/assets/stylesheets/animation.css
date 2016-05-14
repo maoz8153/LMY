@@ -1,0 +1,24 @@
+.player_widget{
+  visibility: hidden;
+}
+.track-image-container{
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}
+
+
+  .track-image-container.ng-hide-add, .track-image-container.ng-hide-remove {
+    transition: all linear 0.5s;
+
+    display: block !important;
+ }
+
+ .track-image-container.ng-hide-add.ng-hide-add-active, .track-image-container.ng-hide-remove {
+    opacity: 0;
+ }
+
+ .track-image-container.ng-hide-add, .track-image-container.ng-hide-remove.ng-hide-remove-active {
+    opacity: 1;
+ }
+

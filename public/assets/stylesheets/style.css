@@ -1,0 +1,133 @@
+ html {
+  height: 100%;
+}
+
+body{
+    overflow-x: hidden;
+     min-height: 100%;
+}
+
+.grid-divider {
+    min-height: 100%;
+    height: 100%;
+}
+
+@media ( min-width: 768px ) {
+    .grid-divider {
+        position: relative;
+        padding: 0;
+        margin-top: 25px;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:nth-child(n+2):before {
+        content: "";
+        border: 1px #ddd solid;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+    .col-padding {
+        padding: 0 15px;
+    }
+}
+.search-display{
+    margin-left: 17px;
+}
+
+.split-element{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.box-element {
+    margin-top: 10px;
+}
+.box-element>h3{
+    color: red;
+
+}
+.thumbnail>img{
+    margin-top: 10px;
+}
+.grid-group-item>.caption{
+    height: 80px;
+}
+ .grid-group-item{
+    height: 15em;
+}
+
+.change-view{
+    float: right;
+}
+.next-results{
+    float: left;
+    font-size: 12px;
+}
+.glyphicon { margin-right:5px; }
+.thumbnail
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #428bca;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+.rowHistory{
+    cursor: pointer;
+}
+.rowHistory:hover{
+    background: #428bca;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}

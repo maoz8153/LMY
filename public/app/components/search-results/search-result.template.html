@@ -1,0 +1,29 @@
+<div>
+    <div id="products" class="row list-group">
+        <div ng-repeat="track in vm.results" class="item  col-xs-4 col-lg-4" ng-class='{"list-group-item": vm.viewResult == "list", "grid-group-item": vm.viewResult == "grid"}' ng-click="vm.setTrack(track)" >
+            <div class="thumbnail">
+                <img ng-if='vm.viewResult == "grid"' class="group list-group-image" ng-src="{{track.artwork_url || vm.defaultImg}}" alt="" />
+                <div class="caption" >
+                    <h5 data-fittext data-fittext-max="inherit" class="group inner list-group-item-heading" >
+                        {{track.title}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <button ng-show="vm.havePagination" ng-click="vm.nextPage()" class="btn btn-default btn-sm next-results" >
+          <span class="glyphicon glyphicon-arrow-right"></span>
+        </button>
+
+        <div class="btn-group change-view">
+            <a ng-click="vm.setListView()" id="list" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-th-list"></span>List</a>
+            <a ng-click="vm.setGridView()" id="grid" class="btn btn-default btn-sm">
+                <span class="glyphicon glyphicon-th"></span>Grid</a>
+        </div>
+    </div>
+</div>
+
+

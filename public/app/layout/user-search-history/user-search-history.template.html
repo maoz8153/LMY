@@ -1,0 +1,21 @@
+<div class="box-element col-md-offset-2">
+    <div class="row">
+    <h1 class="text-center">Recent Searchs</h1>
+        <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Search Input</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-click="vm.emitSearchFromHistory(search)" ng-repeat="search in vm.history track by $index" class="rowHistory">
+            <td>{{$index + 1}}</td>
+            <td>{{search}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    </div>
+</div>

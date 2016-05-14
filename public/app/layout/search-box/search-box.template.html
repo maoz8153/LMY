@@ -1,0 +1,24 @@
+<div class="box-element">
+    <div class="search-display">
+
+
+        <form role="form" name="searchForm">
+                <h1 class="text-center">Search Box</h1>
+                <div class="form-group">
+                    <div class="input-group">
+                        <input ng-model="vm.searchInput" class="form-control" type="text" name="search" placeholder="Search" required/>
+                        <span class="input-group-btn">
+                            <button  ng-click="vm.search(vm.searchInput)" class="btn btn-success" ><span class="glyphicon glyphicon-search" aria-hidden="true"><span style="margin-left:10px;">Search</span></button>
+                        </span>
+                    </div>
+                </div>
+        </form>
+
+
+        <search-result  results="vm.searchResultItems" get-next-search-results="vm.nextSearchResults()" have-pagination="vm.havePagination"></search-result>
+
+
+
+
+    </div>
+</div>
